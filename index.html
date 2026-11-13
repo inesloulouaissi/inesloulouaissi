@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>#ines | digital strategy and growth</title>
+<meta name="description" content="Ines Aissi: UCL Information Management for Business student working on digital strategy, growth and data-led consulting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --fg:#051C2C; --dim:#556674; --rule:#D5DEE6; --mark:#2251FF; --mark-fg:#FFFFFF; --accent:#2251FF;
+  --mono:"JetBrains Mono","SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#051C2C;--fg:#E9F1F7;--dim:#8DA3B4;--rule:#17394F;--mark:#00A9F4;--mark-fg:#051C2C;--accent:#00A9F4;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#051C2C;--fg:#E9F1F7;--dim:#8DA3B4;--rule:#17394F;--mark:#00A9F4;--mark-fg:#051C2C;--accent:#00A9F4;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;overflow-x:clip;background:var(--bg);color:var(--fg);font-family:var(--mono);font-size:.95rem;line-height:1.7}
+.wrap{max-width:46rem;margin:0 auto;padding:2rem 1.5rem 5rem}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
+a:hover{background:var(--mark);color:var(--mark-fg);text-decoration:none}
+a:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+::selection{background:var(--mark);color:var(--mark-fg)}
+
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;color:var(--dim);margin-bottom:3.5rem}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:none}
+
+h1{font-size:clamp(2.6rem,10vw,4.5rem);font-weight:700;letter-spacing:-.04em;line-height:1;margin:0 0 1rem}
+.tag{color:var(--dim);margin:0 0 2.5rem}
+.wave{display:block;width:100vw;max-width:none;margin:0 0 3rem calc(50% - 50vw);height:9rem;color:var(--accent);overflow:hidden}
+footer .wave{margin-bottom:2.5rem}
+.wave use{animation:drift 28s linear infinite}
+@keyframes drift{to{transform:translateX(-600px)}}
+
+ol.lead{margin:0 0 1.5rem;padding:0;list-style:none;counter-reset:n}
+ol.lead li{counter-increment:n;padding-left:2.2rem;position:relative;margin-bottom:1.25rem;max-width:68ch}
+ol.lead li::before{content:counter(n) ".";position:absolute;left:0;color:var(--dim)}
+
+h2{font-size:1.05rem;font-weight:700;margin:4.5rem 0 1.5rem;padding-bottom:.5rem;border-bottom:1px solid var(--rule)}
+h2 span{color:var(--dim)}
+article{margin-bottom:2rem;max-width:68ch}
+h3{font-size:.95rem;font-weight:700;margin:0}
+.meta{color:var(--dim);margin:0}
+ul{list-style:none;margin:.5rem 0 0;padding:0}
+ul li{padding-left:1.5rem;position:relative;margin-bottom:.35rem}
+ul li::before{content:"-";position:absolute;left:.3rem;color:var(--dim)}
+.win{border:1px solid var(--fg);padding:0 .45rem;font-size:.8rem;margin-left:.5rem;white-space:nowrap}
+dl{margin:0;display:grid;grid-template-columns:9rem 1fr;gap:.6rem 1.5rem;max-width:68ch}
+dt{color:var(--dim)}
+dd{margin:0}
+.results{list-style:none;padding:0;margin:0;max-width:68ch}
+.results li{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:.9rem 0;border-bottom:1px solid var(--rule);margin:0}
+.results li::before{content:none}
+.results b{font-weight:700;color:var(--accent)}
+footer{margin-top:5rem;color:var(--dim)}
+footer a{color:var(--fg)}
+@media (max-width:620px){
+  dl,.results li{grid-template-columns:1fr;gap:.1rem}
+  dt{margin-top:.6rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.wave use{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav aria-label="Main">
+  <a href="#results">results</a>
+  <a href="#experience">experience</a>
+  <a href="#projects">projects</a>
+  <a href="#leadership">leadership</a>
+  <a href="#education">education</a>
+  <a href="#contact">contact</a>
+</nav>
+
+<header>
+<h1>#ines</h1>
+<p class="tag">digital strategy, growth and data. london.</p>
+<svg class="wave" viewBox="0 0 900 200" preserveAspectRatio="none" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3">
+<defs><path id="w" vector-effect="non-scaling-stroke" d="M0 60 C100 20 200 20 300 60 S500 100 600 60 S800 20 900 60 S1100 100 1200 60 S1400 20 1500 60"/></defs>
+<g id="ws">
+<use href="#w" y="0" opacity="1"/><use href="#w" y="7" opacity=".9"/><use href="#w" y="14" opacity=".8"/><use href="#w" y="21" opacity=".7"/><use href="#w" y="28" opacity=".6"/><use href="#w" y="35" opacity=".5"/><use href="#w" y="42" opacity=".42"/><use href="#w" y="49" opacity=".34"/><use href="#w" y="56" opacity=".26"/><use href="#w" y="63" opacity=".2"/><use href="#w" y="70" opacity=".14"/><use href="#w" y="77" opacity=".1"/>
+</g>
+</svg>
+<ol class="lead">
+  <li>I study information management for business at UCL. Predicted first class honours.</li>
+  <li>I find where customers drop out of a funnel, fix it, and measure what changed. Booking conversion up 45% on Treatwell and 36% on Fresha.</li>
+  <li>I build and run my own businesses to learn what works. A digital portrait studio with 3,000+ paid clients, started in 2020.</li>
+  <li>I lead teams that win. Three case competitions, in Dubai, London and Rabat.</li>
+</ol>
+</header>
+
+<section id="results" aria-labelledby="h-results">
+<h2 id="h-results"><span>#</span>results</h2>
+<ul class="results">
+  <li><b>+45% / +36%</b><span>booking conversion on Treatwell and Fresha at Maison de Gigi. Organic traffic +12%.</span></li>
+  <li><b>£18,000</b><span>annual revenue from my digital art business. 87% client retention.</span></li>
+  <li><b>5,000+</b><span>members in UCL Consulting Society. Grew 15% while I was Vice President.</span></li>
+  <li><b>200+</b><span>student marks reconsidered after an assessment appeal I negotiated.</span></li>
+</ul>
+</section>
+
+<section id="experience" aria-labelledby="h-exp">
+<h2 id="h-exp"><span>#</span>experience</h2>
+
+<article>
+  <h3>growth &amp; digital strategy lead</h3>
+  <p class="meta">Loulou Cafe, now Maison de Gigi. Sept 2025 to present</p>
+  <ul>
+    <li>Mapped booking-funnel drop-off points using competitor benchmarks (Treatwell, Fresha) and market research to find operational bottlenecks and key risks.</li>
+    <li>Redesigned the booking process and website structure. Conversion rose 45% on Treatwell and 36% on Fresha, and organic traffic rose 12%.</li>
+  </ul>
+</article>
+
+<article>
+  <h3>founder, digital art business</h3>
+  <p class="meta">Aug 2020 to present</p>
+  <ul>
+    <li>Scaled an independent digital portrait business to 3,000+ paid international clients, acquired organically through SEO. I own every project from brief to delivery.</li>
+    <li>Built Excel models (pivot tables, complex formulas, structured tracking) to monitor client activity. They support 87% retention and £18,000 annual revenue.</li>
+  </ul>
+</article>
+
+<article>
+  <h3>data science programme</h3>
+  <p class="meta">British Airways, remote. Aug 2025</p>
+  <ul>
+    <li>Analysed large booking datasets to find gaps in reactive customer acquisition. Built a predictive model that flags high-intent customers before they buy.</li>
+    <li>Turned feature-importance findings into commercial recommendations.</li>
+  </ul>
+</article>
+
+<article>
+  <h3>campus ambassador</h3>
+  <p class="meta">HeadStart Global. Sept 2025 to present</p>
+  <ul>
+    <li>Negotiating with 4 prospective advertising clients across the GCC for a consultancy founded by BCG and UCL School of Management alumni. Using LLM-driven tools to support client analysis.</li>
+  </ul>
+</article>
+
+<article>
+  <h3>economics &amp; business tutor</h3>
+  <p class="meta">Independent, EMEA. Sept 2021 to present</p>
+  <ul>
+    <li>Designed curricula in English, French and Arabic for 50+ students across 30+ countries. Students secured places at Sciences Po and Russell Group universities.</li>
+  </ul>
+</article>
+</section>
+
+<section id="projects" aria-labelledby="h-proj">
+<h2 id="h-proj"><span>#</span>projects</h2>
+
+<article>
+  <h3>lead gcc strategy consultant <span class="win">winner</span></h3>
+  <p class="meta">Spring Global Impact Week, Dubai. Apr 2025</p>
+  <ul><li>Led a 5-person cross-functional team of UCL Master’s students in a live strategy sprint. We analysed data on underserved expatriates and built the winning go-to-market strategy.</li></ul>
+</article>
+
+<article>
+  <h3>lead digital strategy consultant <span class="win">winner</span></h3>
+  <p class="meta">Pets at Home, London. Oct to Nov 2024</p>
+  <ul><li>Managed milestones for a 4-person team investigating a 4.3% decline in accessory sales. Developed an AI-driven app and presented it to leadership. Won Best Digital Transformation Solution among 100+ peers.</li></ul>
+</article>
+
+<article>
+  <h3>inclusive ai governance framework</h3>
+  <p class="meta">Co-authored with PhD researchers, UCL</p>
+  <ul><li>Used labour-market exposure modelling, policy review and discourse analysis to assess the impact of generative AI on economic security.</li></ul>
+</article>
+
+<article>
+  <h3>digital strategy sprint <span class="win">winner</span></h3>
+  <p class="meta">ESSEC Africa, Rabat. 2025</p>
+  <ul><li>Led the winning team (1 of 16). Designed an accessible platform to improve investment literacy across Algeria and presented it in a live demo.</li></ul>
+</article>
+</section>
+
+<section id="leadership" aria-labelledby="h-lead">
+<h2 id="h-lead"><span>#</span>leadership</h2>
+
+<article>
+  <h3>vice president, ucl consulting society</h3>
+  <p class="meta">Mar to Sept 2025</p>
+  <ul><li>Led a team of 28 and tracked open actions. Secured 5 new corporate partnerships and grew membership 15% to 5,000+.</li></ul>
+</article>
+
+<article>
+  <h3>academic representative, ucl</h3>
+  <p class="meta">Sept 2023 to present</p>
+  <ul><li>Lead a team of 4. Negotiated a course-assessment appeal with senior stakeholders, resulting in 200+ student marks being reconsidered.</li></ul>
+</article>
+
+<article>
+  <h3>external relations officer, ucl voices for children</h3>
+  <p class="meta">Nov 2023 to Apr 2024</p>
+  <ul><li>Coordinated event logistics and stakeholder outreach. Raised £2,500+ with engagement from UN commission practitioners.</li></ul>
+</article>
+</section>
+
+<section id="education" aria-labelledby="h-edu">
+<h2 id="h-edu"><span>#</span>education</h2>
+
+<article>
+  <h3>bsc information management for business</h3>
+  <p class="meta">University College London. 2023 to 2027. Predicted first class honours</p>
+  <ul><li>Business Intelligence (81.3), Information Systems (78.77), Digital Strategy and Transformation (77.4).</li></ul>
+</article>
+
+<article>
+  <h3>essec africa: innovation and entrepreneurship</h3>
+  <p class="meta">Rabat. 2025. Grade 16.89/20</p>
+</article>
+
+<article>
+  <h3>glenthorne high school</h3>
+  <p class="meta">2016 to 2023. A Levels: Economics (A*), Business (A*), French (B). Top 2.5% of cohort</p>
+</article>
+</section>
+
+<section id="skills" aria-labelledby="h-skills">
+<h2 id="h-skills"><span>#</span>skills</h2>
+<dl>
+  <dt>languages</dt><dd>English, French, Arabic (native)</dd>
+  <dt>tools</dt><dd>Advanced Excel (pivot tables, VLOOKUP, data links), PowerPoint, Tableau, Power BI</dd>
+  <dt>programming</dt><dd>Python, MySQL, HTML, CSS, JavaScript, C#, C++</dd>
+  <dt>awards</dt><dd>Best Digital Transformation Solution (2024). Silver Development Award, UCL Voices for Children Society</dd>
+  <dt>volunteering</dt><dd>Wikipedia editing since 2018. Hand-drawn artworks for charities globally</dd>
+  <dt>outside work</dt><dd>kickboxing, half-marathon training, digital art, football, culinary arts, baking</dd>
+</dl>
+</section>
+
+<footer id="contact">
+<svg class="wave" viewBox="0 0 900 200" preserveAspectRatio="none" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3"><g id="wf" transform="translate(900 200) rotate(180)"></g></svg>
+<h2><span>#</span>contact</h2>
+<p>Open to internships and projects in digital strategy, growth and data-led consulting.</p>
+<p><a href="mailto:inesloulouaissi@gmail.com">inesloulouaissi@gmail.com</a><br><a href="https://linkedin.com/in/ines-loulou-aissi">linkedin.com/in/ines-loulou-aissi</a></p>
+<p>© 2026 Ines Aissi</p>
+</footer>
+
+</div>
+<script>
+(function(){
+  var g=document.getElementById('ws'),f=document.getElementById('wf');
+  if(!g)return;
+  g.querySelectorAll('use').forEach(function(u,i){u.style.animationDelay=(-i*1.8)+'s'});
+  if(f){var c=g.cloneNode(true);c.removeAttribute('id');f.appendChild(c)}
+})();
+</script>
+</body>
+</html>
